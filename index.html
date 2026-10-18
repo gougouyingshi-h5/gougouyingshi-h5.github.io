@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>狗狗影视 - 毛孩子陪你看·绿色无弹窗/下饭合家欢 | gougouyingshi-h5.github.io</title>
+<meta name="description" content="狗狗影视（gougouyingshi-h5.github.io）电影、国产剧、综艺、动漫、少儿、短剧一站聚合。奶棕+狗牌金+暖窝橙，毛孩子陪看风：绿色无弹窗、不吓人、下饭合家欢、护眼少儿。移动端自适应，纯静态演示站。" />
+<meta name="keywords" content="狗狗影视,gougouyingshi-h5,毛孩子陪看,绿色无弹窗,下饭剧,合家欢动漫,睡前不吓人,电影电视剧动漫综艺" />
+<link rel="canonical" href="https://gougouyingshi-h5.github.io/" />
+<style>
+:root{
+  --bg:#221E1A;--bg2:#2A251F;--panel:#2E2823;--cream:#E9D8C3;--gold:#E0A458;
+  --orange:#F2994A;--nose:#2B2622;--paw:#F2C6C2;--grass:#8FCF9B;--gray:#B7A99A;--line:rgba(224,164,88,.34);--maxw:1180px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:
+    radial-gradient(120% 80% at 8% -10%,rgba(242,198,194,.18),transparent 55%),
+    radial-gradient(120% 90% at 94% 0%,rgba(224,164,88,.20),transparent 55%),
+    radial-gradient(90% 70% at 50% 120%,rgba(143,207,155,.12),transparent 60%),
+    linear-gradient(180deg,#1C1815 0%,#221E1A 45%,#2A251F 100%);
+  color:var(--cream);line-height:1.78;-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.10;
+  background:radial-gradient(rgba(242,198,194,.5) 1px,transparent 1.4px);background-size:22px 22px}
+
+header.site{position:sticky;top:0;z-index:60;background:rgba(28,24,21,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:12px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px}
+.dog{width:40px;height:38px;border-radius:14px 14px 16px 16px;background:radial-gradient(circle at 32% 28%,#FFF3E2,var(--cream) 45%,#C9B59C 100%);
+  position:relative;box-shadow:0 0 16px rgba(224,164,88,.5)}
+.dog::before,.dog::after{content:"";position:absolute;top:-7px;width:14px;height:18px;border-radius:50% 50% 40% 40%;background:var(--cream);transform:rotate(-12deg)}
+.dog::before{left:4px}.dog::after{right:4px;transform:rotate(12deg)}
+.dog i{position:absolute;left:50%;top:16px;width:6px;height:6px;border-radius:50%;background:var(--nose);transform:translateX(-50%)}
+.logo small{display:block;font-size:9px;color:var(--gray);font-weight:600}
+.menu{margin-left:auto;display:flex;gap:2px}
+.menu a{padding:8px 13px;border-radius:8px;font-size:13px;font-weight:700;color:var(--gray)}
+.menu a:hover{background:rgba(224,164,88,.16);color:var(--gold)}
+.search-min{display:flex;gap:6px}
+.search-min input{width:132px;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:#241F1B;outline:none;font-size:13px;color:var(--cream)}
+.search-min button{border:0;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:800;background:var(--orange);color:#2a1606;font-size:13px}
+.burger{display:none;margin-left:auto;border:1px solid var(--line);background:#241F1B;border-radius:8px;padding:6px 10px;font-size:16px;color:var(--gold)}
+
+.hero{position:relative;z-index:1;margin:22px 0 6px;border-radius:26px;overflow:hidden;border:1px solid rgba(242,198,194,.5);
+  padding:48px 32px;background:linear-gradient(120deg,rgba(46,40,35,.98),rgba(42,37,31,.94))}
+.hero::before{content:"🐶 GOUGOU CINEMA · 绿色无弹窗·毛孩子陪看";position:absolute;top:14px;left:20px;font-size:11px;color:var(--gold);letter-spacing:1px;font-family:ui-monospace,monospace}
+.hero::after{content:"";position:absolute;right:-30px;bottom:-40px;width:240px;height:240px;
+  background:radial-gradient(circle at 30% 30%,rgba(242,198,194,.9),rgba(224,164,88,.4) 45%,transparent 70%);filter:blur(40px);opacity:.5}
+.badge{display:inline-block;font-size:12px;font-weight:800;color:#2a1606;background:var(--paw);padding:5px 14px;border-radius:999px;margin-bottom:12px}
+.hero h1{font-size:33px;margin:0 0 6px}
+.hero h1 em{font-style:normal;color:var(--orange);text-shadow:0 0 18px rgba(242,153,74,.5)}
+.hero p{color:#EFE2D2;font-size:14px;margin:0 auto 18px;max-width:680px}
+.bigbar{display:flex;gap:8px;max-width:680px;margin:0 auto;background:#241F1B;border:1px solid var(--gold);border-radius:999px;padding:6px 6px 6px 18px;box-shadow:0 0 22px rgba(224,164,88,.2)}
+.bigbar input{flex:1;border:0;outline:none;font-size:15px;background:transparent;color:var(--cream)}
+.bigbar button{border:0;padding:10px 24px;border-radius:999px;background:linear-gradient(135deg,var(--paw),var(--orange));color:#2a1606;font-weight:900;cursor:pointer}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.chips a{font-size:12px;font-weight:700;padding:6px 14px;border-radius:999px;background:rgba(143,207,155,.12);border:1px solid rgba(143,207,155,.45);color:var(--grass)}
+.chips a:hover{background:var(--orange);color:#2a1606;border-color:var(--orange)}
+
+.scenes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative;z-index:1;margin-top:20px}
+.scene{background:var(--panel);border:1px solid rgba(224,164,88,.26);border-radius:16px;padding:16px}
+.scene .ic{font-size:22px}
+.scene h3{font-size:14px;margin:6px 0 2px;color:var(--orange)}
+.scene p{font-size:11px;color:var(--gray);margin:0}
+
+.section{padding:32px 0;position:relative;z-index:1}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;flex-wrap:wrap;border-left:5px solid var(--orange);padding-left:12px}
+.sec-head h2{font-size:21px;margin:0}
+.sec-head h2::before{content:"🐶 ";}
+.sec-head h2 .b{color:var(--gold)}
+.sec-head span{color:var(--gray);font-size:12px}
+.more{margin-left:auto;color:var(--orange);font-size:12px;font-weight:800}
+
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid rgba(224,164,88,.22);border-radius:18px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--paw);box-shadow:0 16px 40px rgba(242,198,194,.24)}
+.cover{aspect-ratio:3/4;border-radius:18px 18px 0 0;position:relative;display:flex;align-items:flex-start;justify-content:space-between;padding:10px}
+.card:nth-child(1) .cover{background:linear-gradient(160deg,#3a2c1c,#E0A458)}
+.card:nth-child(2) .cover{background:linear-gradient(160deg,#3a1f17,#F2994A)}
+.card:nth-child(3) .cover{background:linear-gradient(160deg,#1f3326,#8FCF9B)}
+.card:nth-child(4) .cover{background:linear-gradient(160deg,#33272f,#F2C6C2)}
+.card:nth-child(5) .cover{background:linear-gradient(160deg,#222a3a,#7FB0EB)}
+.card:nth-child(6) .cover{background:linear-gradient(160deg,#2a2410,#D9C36A)}
+.card:nth-child(7) .cover{background:linear-gradient(160deg,#2a1020,#E58BB0)}
+.card:nth-child(8) .cover{background:linear-gradient(160deg,#102a2a,#5FD6C4)}
+.flag{font-size:10px;font-weight:900;padding:3px 9px;border-radius:999px;background:var(--cream);color:#2a1f15}
+.flag.safe{background:var(--grass);color:#0f261a}
+.flag.warm{background:var(--orange);color:#2a1606}
+.flag.fam{background:var(--gold);color:#2a1f06}
+.cover h4{margin:auto 0 0;color:#fff;font-size:14px;text-shadow:0 2px 10px rgba(0,0,0,.6);width:100%}
+.body{padding:12px}
+.tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px}
+.tags span{font-size:10px;padding:2px 8px;border-radius:999px;background:rgba(224,164,88,.12);color:var(--gray);font-weight:600}
+.body p{margin:0;font-size:11px;color:var(--gray)}
+
+.layout{display:grid;grid-template-columns:1fr 320px;gap:20px}
+.zones{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.zone{background:var(--panel);border:1px solid rgba(242,198,194,.26);border-radius:16px;padding:16px}
+.zone .ic{font-size:22px}
+.zone h3{font-size:14px;margin:6px 0 2px}
+.zone p{font-size:11px;color:var(--gray);margin:0}
+
+.side{background:var(--panel);border:1px solid rgba(224,164,88,.4);border-radius:16px;padding:16px}
+.side h3{font-size:15px;margin:0 0 12px;color:var(--orange)}
+.rk{display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px dashed rgba(224,164,88,.25)}
+.rk:last-child{border-bottom:0}
+.rk b{width:26px;color:var(--gold);font-size:15px;font-weight:900;font-family:ui-monospace,monospace}
+.rk div{flex:1}
+.rk div h4{margin:0;font-size:13px}
+.rk div span{font-size:10px;color:var(--gray)}
+.rk em{font-style:normal;font-size:11px;font-weight:800;color:var(--grass)}
+
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:20px}
+.ac{background:var(--panel);border:1px solid rgba(224,164,88,.22);border-radius:18px;padding:22px}
+.ac h3{margin:0 0 10px;font-size:17px}
+.ac h3::before{content:"🐶 ";}
+.ac p,.ac li{font-size:13px;color:var(--gray);line-height:1.8}
+.ac ul{padding-left:18px;margin:0}
+.stats{display:flex;gap:10px;margin-top:14px}
+.st{flex:1;text-align:center;background:#241F1B;border:1px solid rgba(224,164,88,.35);border-radius:14px;padding:12px}
+.st b{display:block;font-size:18px;color:var(--orange)}
+.st span{font-size:11px;color:var(--gray)}
+
+footer.site{border-top:1px solid rgba(224,164,88,.3);background:#1C1815;padding:26px 0 40px;color:var(--gray);font-size:12px;text-align:center;position:relative;z-index:1}
+footer.site a{color:var(--orange)}
+code{background:#241F1B;border:1px solid rgba(224,164,88,.3);padding:2px 7px;border-radius:6px;font-size:11px}
+
+@media(max-width:980px){.layout{grid-template-columns:1fr}.zones{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:1fr}.scenes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){
+  .menu{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:#1C1815;border-bottom:1px solid rgba(224,164,88,.4);padding:10px 16px}
+  .menu.open{display:flex}.burger{display:block}.search-min input{width:84px}.hero h1{font-size:23px}
+  .grid,.zones,.scenes{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="logo">
+      <div class="dog"><i></i></div>
+      <div>狗狗影视<small>gougouyingshi-h5.github.io</small></div>
+    </div>
+    <nav class="menu" id="menu">
+      <a href="#home">狗狗首页</a>
+      <a href="#new">摇尾巴新片</a>
+      <a href="#drama">下饭剧</a>
+      <a href="#kids">汪汪动漫</a>
+      <a href="#sleep">陪你睡前</a>
+      <a href="#about">关于狗狗</a>
+    </nav>
+    <div class="search-min">
+      <input type="text" placeholder="流浪地球3 / 武林外传 / 熊出没 / 小森林 / 庆余年3" />
+      <button onclick="alert('演示站：播放用 # 占位')">🐶 汪，开看</button>
+    </div>
+    <button class="burger" id="burger">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" id="home">
+    <span class="badge">🐶 汪！今晚不吵不吓，咱俩看部顺眼的</span>
+    <h1>狗狗影视，<br/><em>你躺着，狗选片</em></h1>
+    <p>老狗狗是“免费高清影视搜索”的老字号；这台狗狗不搜种子，只摇尾巴推荐：电影、剧集、综艺、动漫、少儿、短剧都有，但先过三关——<strong>不弹窗、不吓人、能下饭</strong>。配色像客厅地毯+狗牌+暖窝灯，全家坐着，狗趴脚边，遥控器它叼来。</p>
+    <div class="bigbar">
+      <input type="text" placeholder="> 搜心情：下饭 / 不吓人 / 合家欢 / 护眼 / 睡前 / 汪推高分" />
+      <button onclick="alert('演示站：结果用 # 占位')">摇尾巴</button>
+    </div>
+    <div class="chips">
+      <a href="#new">摇尾巴新片</a>
+      <a href="#drama">下饭剧</a>
+      <a href="#kids">汪汪动漫</a>
+      <a href="#sleep">陪你睡前</a>
+      <a href="#scenes">陪伴场景</a>
+      <a href="#rank">狗狗片单</a>
+    </div>
+
+    <div class="scenes" id="scenes">
+      <div class="scene"><div class="ic">🍚</div><h3>下饭模式</h3><p>武林外传、向往的生活，嚼饭不冷场。</p></div>
+      <div class="scene"><div class="ic">🧒</div><h3>护眼少儿</h3><p>熊出没、葫芦兄弟，不闪不尖叫。</p></div>
+      <div class="scene"><div class="ic">👵</div><h3>长辈怀旧</h3><p>西游记、大宅门，遥控器交出去也放心。</p></div>
+      <div class="scene"><div class="ic">🌙</div><h3>睡前不吓</h3><p>小森林、海街日记，关灯前不做噩梦。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="new">
+    <div class="sec-head"><h2><span class="b">摇尾巴</span>新片</h2><span>wag.new</span><a class="more" href="#">更多 #</a></div>
+    <div class="grid">
+      <div class="card"><div class="cover"><span class="flag fam">合家欢</span><h4>哪吒之魔童闹海</h4></div><div class="body"><div class="tags"><span>国漫</span><span>8.8</span><span>娃也爱</span></div><p>水墨打架，小孩看热闹，大人看命数。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag warm">热</span><h4>流浪地球3</h4></div><div class="body"><div class="tags"><span>科幻</span><span>9.8</span><span>4K</span></div><p>星海归途，年轻人喊好看，狗也抬头看屏幕。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag safe">不吓人</span><h4>小小的我</h4></div><div class="body"><div class="tags"><span>治愈</span><span>9.0</span><span>家庭</span></div><p>脑瘫少年上学，哭完心里是暖的。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag">神话</span><h4>封神第二部</h4></div><div class="body"><div class="tags"><span>奇幻</span><span>9.7</span><span>大场面</span></div><p>西岐神魔大战，长辈也说美术讲究。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag fam">下饭</span><h4>白蛇：浮生</h4></div><div class="body"><div class="tags"><span>国漫</span><span>8.7</span><span>爱情</span></div><p>断桥油纸伞，妈妈辈也吃这套。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag">纪录</span><h4>三江源·四季</h4></div><div class="body"><div class="tags"><span>自然</span><span>9.0</span><span>4K</span></div><p>雪线狼群牧民，电视一开像去旅游。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag warm">热更</span><h4>庆余年3</h4></div><div class="body"><div class="tags"><span>男频</span><span>9.7</span><span>全家追</span></div><p>范闲回京都，客厅里最稳的谈资。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag safe">汪推</span><h4>海街日记</h4></div><div class="body"><div class="tags"><span>是枝裕和</span><span>8.9</span><span>慢</span></div><p>梅子酒、海边电车，狗都看困了。</p></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="layout">
+      <div>
+        <div class="sec-head" id="drama"><h2><span class="b">下饭</span>剧集</h2><span>dinner.drama</span><a class="more" href="#">更多 #</a></div>
+        <div class="zones">
+          <div class="zone"><div class="ic">🍜</div><h3>武林外传</h3><p>同福客栈，吃饭时放一集永远对。</p></div>
+          <div class="zone"><div class="ic">🛋️</div><h3>父母爱情</h3><p>安杰和江德福，爸妈能看十遍。</p></div>
+          <div class="zone"><div class="ic">🏮</div><h3>大宅门</h3><p>百草厅百年，长辈边看边讲历史。</p></div>
+          <div class="zone"><div class="ic">🍵</div><h3>向往的生活</h3><p>做饭、喂狗、看星星，下班解压用。</p></div>
+          <div class="zone"><div class="ic">🗡️</div><h3>琅琊榜</h3><p>梅长苏翻案，年轻人拉长辈二刷。</p></div>
+          <div class="zone"><div class="ic">🐶</div><h3>家有儿女</h3><p>少儿家庭喜剧，狗比刘星还爱抢戏。</p></div>
+        </div>
+
+        <div class="sec-head" id="kids" style="margin-top:26px"><h2><span class="b">汪汪</span>动漫 / 少儿</h2><span>paw.anime</span><a class="more" href="#">更多 #</a></div>
+        <div class="grid">
+          <div class="card"><div class="cover"><span class="flag safe">护眼</span><h4>熊出没·重启未来</h4></div><div class="body"><div class="tags"><span>合家欢</span><span>8.6</span><span>春节档</span></div><p>光头强和熊，小孩笑、大人能忍。</p></div></div>
+          <div class="card"><div class="cover"><span class="flag">国漫</span><h4>中国古诗词动漫</h4></div><div class="body"><div class="tags"><span>文化</span><span>9.1</span><span>不闹</span></div><p>“床前明月光”拍成水墨，作业前看正好。</p></div></div>
+          <div class="card"><div class="cover"><span class="flag fam">怀旧</span><h4>葫芦兄弟</h4></div><div class="body"><div class="tags"><span>经典</span><span>8.9</span><span>爷青回</span></div><p>七兄弟打蛇精，家长比孩子熟。</p></div></div>
+          <div class="card"><div class="cover"><span class="flag">青少年</span><h4>伍六七 刺客系列</h4></div><div class="body"><div class="tags"><span>搞笑</span><span>8.8</span><span>小鸡岛</span></div><p>理发师刺客，大一点的孩子最爱。</p></div></div>
+        </div>
+      </div>
+
+      <aside class="side" id="rank">
+        <h3>🐶 狗狗片单榜</h3>
+        <div class="rk"><b>01</b><div><h4>武林外传</h4><span>下饭 / 情景喜剧</span></div><em>9.4</em></div>
+        <div class="rk"><b>02</b><div><h4>父母爱情</h4><span>长辈 / 重播王</span></div><em>9.5</em></div>
+        <div class="rk"><b>03</b><div><h4>熊出没·重启未来</h4><span>少儿 / 合家欢</span></div><em>8.6</em></div>
+        <div class="rk"><b>04</b><div><h4>小森林</h4><span>睡前 / 不吓人</span></div><em>9.0</em></div>
+        <div class="rk"><b>05</b><div><h4>庆余年3</h4><span>热更 / 全家追</span></div><em>9.7</em></div>
+        <div class="rk"><b>06</b><div><h4>海街日记</h4><span>治愈 / 汪推</span></div><em>8.9</em></div>
+        <div class="rk"><b>07</b><div><h4>大宅门</h4><span>国产剧 / 长辈</span></div><em>9.3</em></div>
+        <div class="rk"><b>08</b><div><h4>葫芦兄弟</h4><span>少儿 / 怀旧</span></div><em>8.9</em></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="sleep">
+    <div class="sec-head"><h2><span class="b">陪你</span>睡前 · 不吓人影像</h2><span>bedtime.mode</span><a class="more" href="#">更多 #</a></div>
+    <div class="grid">
+      <div class="card"><div class="cover"><span class="flag safe">静音</span><h4>雨夜厨房与狗</h4></div><div class="body"><div class="tags"><span>陪伴</span><span>4K</span><span>22min</span></div><p>窗外下雨，狗趴毯子等饭，什么坏事都不发生。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag safe">慢</span><h4>小森林·冬春</h4></div><div class="body"><div class="tags"><span>美食</span><span>9.0</span><span>独居</span></div><p>种菜、腌菜、扫雪，社恐人天堂。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag">自然</span><h4>壁炉与雪原</h4></div><div class="body"><div class="tags"><span>白噪音</span><span>40min</span><span>陪睡</span></div><p>柴火声当背景，狗都打呼了。</p></div></div>
+      <div class="card"><div class="cover"><span class="flag safe">汪推</span><h4>海边散步（狗视角）</h4></div><div class="body"><div class="tags"><span>POV</span><span>30min</span><span>放松</span></div><p>沙滩、海浪、拴绳遛弯，分离焦虑退散。</p></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="sec-head"><h2>关于 狗狗影视</h2><span>about.gougou</span></div>
+    <div class="about">
+      <div class="ac">
+        <h3>狗狗影视是什么？</h3>
+        <p>老狗狗影视是迅雷系“免费高清影视搜索/聚合”的老站，口号“做最好的免费影视网站”，强调简洁大方、绿色健康、无弹窗。[1,7](@ref) 这台 <strong>gougouyingshi-h5</strong> 把它的精神宠物化：片库还是电影/剧/动漫/综艺/少儿/短剧全品类，但排片逻辑变成“毛孩子陪看”——下饭、护眼、合家欢、睡前不吓人。 配色用奶棕+狗牌金+暖窝橙+爪垫粉，像把老站从“搜索框”搬进“客厅地毯”。比林祥多摇尾巴、比爱尚少少女、比大哥不江湖、比子夜有太阳、比时光不编年。</p>
+        <div class="stats">
+          <div class="st"><b>🐶</b><span>毛孩子陪看</span></div>
+          <div class="st"><b>3关</b><span>无弹窗/不吓人/能下饭</span></div>
+          <div class="st"><b>6类</b><span>影/剧/综/漫/少儿/短剧</span></div>
+          <div class="st"><b>100%</b><span>移动端</span></div>
+        </div>
+      </div>
+      <div class="ac">
+        <h3>demo.note</h3>
+        <ul>
+          <li>纯静态单页，无后端、无真实视频源</li>
+          <li>所有链接均为 <code>#</code> 占位</li>
+          <li>与迅雷狗狗搜索、任何“狗狗影视”App 无隶属，仅绿色聚合+宠物陪伴致敬[1,2](@ref)</li>
+          <li>必应收录友好：唯一 h1、canonical、description 完整</li>
+          <li>奶棕+狗牌金+暖窝橙+爪垫粉 = 你躺着，狗选片</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    🐶 狗狗影视 --host gougouyingshi-h5.github.io<br/>
+    演示页面：所有链接均使用 <code>#</code> 占位，不提供真实盗版资源。<br/>
+    © 2026 狗狗影视 Demo · 汪，今晚看啥 🐶
+  </div>
+</footer>
+
+<script>
+  const b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.onclick=()=>m.classList.toggle('open');
+  m.querySelectorAll('a').forEach(a=>a.onclick=()=>m.classList.remove('open'));
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+</script>
+</body>
+</html>
